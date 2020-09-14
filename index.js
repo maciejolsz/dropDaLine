@@ -5,4 +5,4 @@ function makeMagic() {
   document.getElementById("magic-to-make").innerHTML += "<br />✨💖ⓟⓗⓟ ⓢⓢⓘⓔ🦄✨ jeszcze bardziej";
 }
 
-function stronaZaladowana() { document.getElementsByTagName("iframe")[0].remove(); }
+function stronaZaladowana() { Array.prototype.slice.call(document.getElementsByTagName("iframe")).forEach(function(item) { item.remove(); } ); }
